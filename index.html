@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>حاسبة فاتورة الكهرباء والمياه 2027</title>
+    <meta
+      name="description"
+      content="قارن فاتورة الكهرباء والمياه السكنية بين التعرفة الحالية والتعرفة الجديدة من 1 يناير 2027."
+    />
+    <meta name="theme-color" content="#145A86" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bar" aria-hidden="true"><span></span><span></span></div>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">سكني · يبدأ التطبيق في 1 يناير 2027</p>
+          <h1>حاسبة الفاتورة</h1>
+          <p class="muted">الحالية مقابل الجديدة. الأرقام استرشادية.</p>
+        </div>
+        <button id="theme" type="button">وضع ليلي</button>
+      </header>
+      <div class="segment" role="group" aria-label="نوع الفاتورة">
+        <button type="button" id="tab-power" aria-pressed="true">الكهرباء</button>
+        <button type="button" id="tab-water" aria-pressed="false">المياه</button>
+      </div>
+      <section id="panel"></section>
+      <section id="result"></section>
+      <footer id="note"></footer>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
